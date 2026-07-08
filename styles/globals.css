@@ -37,3 +37,19 @@
   animation: slideIn 0.25s ease-out forwards;
 }
 
+/* Progress loading bar animation */
+@keyframes loadingBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-loading-bar {
+  animation: loadingBar 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
