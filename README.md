@@ -205,3 +205,26 @@ This project is structured as a unified Next.js project and is ready to deploy d
    * **Key**: `DATABASE_URL`
    * **Value**: `mysql://<USER>:<PASSWORD>@<HOST>:<PORT>/notice_board?sslaccept=accept_invalid_certs`
 4. Click **Deploy**. Vercel will build the frontend pages and deploy the route files in `pages/api` as serverless functions.
+
+---
+
+## 🔮 Future Improvements
+
+With additional time, the primary improvement would be implementing **User Authentication and Role-Based Access Control (RBAC)**. Currently, the application allows any user to create, edit, and delete notices. Integrating a secure authentication service (such as NextAuth.js, Clerk, or custom JWT-based sessions) would enable distinct roles:
+- **Administrators/Publishers**: Full privileges to add, update, and remove notices.
+- **General Users (Students/Employees)**: Read-only access to view, filter, and search notices without edit capabilities.
+
+This would ensure security, accountability, and reliability for deployment in a real-world campus or corporate environment.
+
+---
+
+## 🤖 Use of AI
+
+AI tools were utilized during the development of this project to assist in specific stages of the workflow:
+* **Clarify assignment requirements**: Helped quickly unpack specifications and map them to technical goals.
+* **Troubleshoot Prisma and TiDB configuration issues**: Guided the configuration of the TiDB connection parameters, specifically handling TLS/SSL connection certificate details.
+* **Improve the UI**: Suggested component layout organization and Tailwind CSS styling patterns to achieve a modern, cohesive look.
+* **Review and refine the README documentation**: Assisted in structuring the API routes documentation and deployment steps for maximum readability.
+
+*All implementation decisions, coding, testing, debugging, and final verification were completed and validated by me.*
+
